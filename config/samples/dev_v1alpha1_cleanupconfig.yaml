@@ -1,0 +1,7 @@
+apiVersion: dev.dev/v1alpha1
+kind: CleanUpConfig
+metadata:
+  name: cleanupconfig-sample
+spec:
+  schedule: "0 0 * * 1-5"
+  

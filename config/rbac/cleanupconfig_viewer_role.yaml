@@ -1,0 +1,20 @@
+# permissions for end users to view cleanupconfigs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cleanupconfig-viewer-role
+rules:
+- apiGroups:
+  - dev.dev
+  resources:
+  - cleanupconfigs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - dev.dev
+  resources:
+  - cleanupconfigs/status
+  verbs:
+  - get

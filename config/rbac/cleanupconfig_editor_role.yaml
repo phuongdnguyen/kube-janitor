@@ -1,0 +1,24 @@
+# permissions for end users to edit cleanupconfigs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cleanupconfig-editor-role
+rules:
+- apiGroups:
+  - dev.dev
+  resources:
+  - cleanupconfigs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - dev.dev
+  resources:
+  - cleanupconfigs/status
+  verbs:
+  - get
