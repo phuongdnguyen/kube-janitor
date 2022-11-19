@@ -2,7 +2,7 @@
 <img src="./docs/static/logo.png" width="200" />
 
 ## Description
-A kubernetes controller to clean up pod in bad states
+A kubernetes controller to clean up pod in bad states. Similar to a cronjob but you can exclude certain namespaces with labels.
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
